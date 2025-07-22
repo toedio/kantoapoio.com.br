@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanto Apoio Empresarial</title>
+    <style>
+        :root {
+            --cor-primaria: #365e39;
+            --cor-secundaria: #f5f0ea;
+            --cor-fundo: #ffffff;
+            --cor-texto: #1f1f1f;
+            --cor-clara: #fff;
+            --cor-subtexto: #555;
+            --cor-footer: #ccc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--cor-texto);
+            background-color: var(--cor-fundo);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--cor-secundaria);
+            color: var(--cor-clara);
+            padding: 20px 40px;
+        }
+
+        header img {
+            height: 250px;
+            background-color: var(--cor-secundaria);
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        header div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav {
+            background: var(--cor-primaria);
+            padding: 10px 40px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--cor-clara);
+        }
+
+        .hero {
+            background: url("banner.png") center/cover no-repeat;
+            background-color: rgba(0, 0, 0, 0.6);
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--cor-clara);
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            padding: 30px 0;
+        }
+
+        section {
+            padding: 60px 40px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service {
+            background: var(--cor-clara);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .service h3 {
+            color: var(--cor-primaria);
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            color: var(--cor-subtexto);
+        }
+
+        #about {
+            background: var(--cor-clara);
+        }
+
+        #about p {
+            color: var(--cor-subtexto);
+            padding: 20px;
+            margin: 10px 30px;
+        }
+
+        #contato {
+            padding: 0;
+            background: var(--cor-primaria);
+        }
+
+        .contact-centered {
+            color: var(--cor-clara);
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 8px;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .contact-centered h3 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .contact-centered p {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        footer {
+            background: var(--cor-primaria);
+            color: var(--cor-footer);
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="logo.png" alt="Logo Kanto Apoio Empresarial" />
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">Sobre nós</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section class="hero">
+        <h2>O braço que funciona quando o resto precisa respirar.</h2>
+    </section>
+
+    <section id="about">
+        <h2 style="text-align:center; margin-bottom: 40px;">Sobre nós</h2>
+        <p>
+            Na Kanto, somos especialistas em dar forma, ritmo e sustentação a negócios em movimento.
+            Apoiamos empresas que precisam de agilidade para estruturar, adaptar ou expandir suas operações, com soluções sob medida e atuação estratégica nos bastidores.
+            Combinamos conhecimento técnico, visão prática e total discrição para facilitar o que precisa funcionar — sem complicações.
+        </p>
+    </section>
+
+    <section id="servicos">
+        <h2 style="text-align:center; margin-bottom: 40px;">Nossos Serviços</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Apoio Operacional</h3>
+                <p>Apoio para projetos emergenciais ou recorrentes.</p>
+            </div>
+            <div class="service">
+                <h3>Estruturação Jurídica e Comercial</h3>
+                <p>Criação e gestão de unidades jurídicas e comerciais.</p>
+            </div>
+            <div class="service">
+                <h3>Organização de Dados</h3>
+                <p>Contratos, documentos e ambientes digitais organizados.</p>
+            </div>
+            <div class="service">
+                <h3>Backoffice Estratégico</h3>
+                <p>Suporte administrativo personalizado e sob medida.</p>
+            </div>
+            <div class="service">
+                <h3>Suporte Contínuo</h3>
+                <p>Para empresas que não podem parar.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="contact-centered">
+            <p>Rua dos Toneleiros, 50. Centro. São Paulo, SP</p>
+            <p>contato@jarvisadm.com.br</p>
+            <p>(11) 4002-8922</p>
+            <p>CNPJ: </p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Kanto Apoio Empresarial. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
